@@ -1,0 +1,6 @@
+name: CandorTrial
+version: '${project.version}'
+main: me.joehosten.candortrial.CandorTrial
+api-version: '1.19'
+authors:
+  - "phpfpm (Joe Hosten / hypews)"
