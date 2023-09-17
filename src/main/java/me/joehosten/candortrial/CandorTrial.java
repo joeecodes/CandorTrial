@@ -20,8 +20,7 @@ public final class CandorTrial extends BasePlugin {
         setInstance(this);
 
         // config init
-        getConfig().options().copyDefaults();
-        saveConfig();
+        loadFiles(this, "config.yml");
 
         // register commands
         registerCommand(

@@ -39,6 +39,12 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
+                            <relocations>
+                                <relocation>
+                                    <pattern>games.negative.framework</pattern>
+                                    <shadedPattern>me.joehosten.candortrial</shadedPattern>
+                                </relocation>
+                            </relocations>
                         </configuration>
                     </execution>
                 </executions>
@@ -78,7 +84,7 @@
             <groupId>games.negative.framework</groupId>
             <artifactId>minecraft-framework</artifactId>
             <version>3.4.9</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
